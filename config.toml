@@ -1,0 +1,55 @@
+theme = "dark_plus"
+
+[editor]
+line-number = "relative"
+soft-wrap.enable = true
+bufferline ="multiple"
+color-modes = true
+true-color = true
+completion-replace =true
+end-of-line-diagnostics = "hint"
+
+[editor.lsp]
+enable = true
+display-messages = true
+display-inlay-hints = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+
+[keys.normal]
+"X" = "extend_line_above"
+
+"A-h" ="extend_char_left"
+"A-l" ="extend_char_right"
+
+"B" = "extend_prev_long_word_start"
+"b" = "extend_prev_word_start"
+"C-b" = "extend_prev_word_start"
+
+"E" = "extend_next_long_word_end"
+"e" = "extend_next_word_end"
+"C-e" = "extend_next_sub_word_end"
+
+"W" = "extend_next_long_word_start"
+"w" = "extend_next_word_start"
+"C-w" = "extend_next_sub_word_start"
+
+"C-right" = "move_next_word_end"
+"C-left" = "move_prev_word_start"
+"A-y" =":clipboard-yank"
+"g" = {"[" = "match_brackets"}
+
+[keys.normal.space]
+"c" = ":config-open"
+"C-c" = ":config-reload"
+
+[keys.insert]
+"C-backspace" = 'delete_word_backward'
+"C-right" = ["move_next_word_end", "collapse_selection"] 
+"C-left" = ["move_prev_word_start", "collapse_selection"] 
+
