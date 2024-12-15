@@ -8,16 +8,22 @@ color-modes = true
 true-color = true
 completion-replace =true
 end-of-line-diagnostics = "hint"
+# path-completion = true
+completion-timeout = 250
+auto-completion = true
 
 [editor.lsp]
 enable = true
 display-messages = true
 display-inlay-hints = true
 
+
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 
+[editor.file-picker]
+hidden= false
 [editor.inline-diagnostics]
 cursor-line = "warning"
 
@@ -41,15 +47,14 @@ cursor-line = "warning"
 
 "C-right" = "move_next_word_end"
 "C-left" = "move_prev_word_start"
-"A-y" =":clipboard-yank"
 "g" = {"[" = "match_brackets"}
 
 [keys.normal.space]
 "c" = ":config-open"
 "C-c" = ":config-reload"
+"n" = ":new"
 
 [keys.insert]
 "C-backspace" = 'delete_word_backward'
 "C-right" = ["move_next_word_end", "collapse_selection"] 
 "C-left" = ["move_prev_word_start", "collapse_selection"] 
-

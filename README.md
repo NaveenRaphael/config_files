@@ -6,8 +6,11 @@ Some of my configuration files for different systems
 
 - miniforge
 - lazygit
-- htop
+- btop
 - zoxide (and fzf)
 - helix
 - starship
 - marimo
+- zen
+- yazi
+- nala
