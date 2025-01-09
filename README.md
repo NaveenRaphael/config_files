@@ -14,3 +14,4 @@ Some of my configuration files for different systems
 - zen
 - yazi
 - nala
+- wezterm/ghostty
