@@ -15,3 +15,5 @@ Some of my configuration files for different systems
 - yazi
 - nala
 - wezterm/ghostty
+- just
+- GNU PARALLEL <3 (note the --progress flag)

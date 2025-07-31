@@ -14,7 +14,7 @@ config.color_scheme = 'Catppuccin Mocha'
 -- So that i can do whatever the heck I want
 config.disable_default_key_bindings = true
 
-config.leader = { key = "Alt", mods = "NONE", timeout_milliseconds = 2000 }
+config.leader = { key = "q", mods = "ALT", timeout_milliseconds = 2000 }
 
 local act = wezterm.action
 local mux = wezterm.mux
@@ -285,7 +285,7 @@ wezterm.on('gui-startup', function(cmd)
   top_pane:send_text 'zen \n'
   top_right_pane: send_text 'obsidian \n'
   pane: send_text 'btop \n'
-  window:spawn_tab({})
+  local new_window = window:spawn_tab({})
 end)
 -- and finally, return the configuration to wezterm
 return config

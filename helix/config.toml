@@ -1,4 +1,4 @@
-theme = "dark_plus"
+theme = "bogster"
 
 [editor]
 line-number = "relative"
@@ -11,6 +11,9 @@ end-of-line-diagnostics = "hint"
 # path-completion = true
 completion-timeout = 250
 auto-completion = true
+word-completion.enable = true
+word-completion.trigger-length = 5
+rainbow-brackets = true
 
 [editor.lsp]
 enable = true
@@ -48,9 +51,17 @@ cursor-line = "warning"
 "C-right" = "move_next_word_end"
 "C-left" = "move_prev_word_start"
 "g" = {"[" = "match_brackets"}
+"r" = "replace_with_yanked"
+"R" = "replace"
+
+[keys.select]
+";" = "command_mode"
+":" = "collapse_selection"
 
 [keys.normal.space]
 "c" = ":config-open"
+"q" = ":buffer-close"
+"Q" = ":buffer-close!"
 "C-c" = ":config-reload"
 "n" = ":new"
 

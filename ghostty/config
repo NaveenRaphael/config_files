@@ -1,9 +1,13 @@
 gtk-tabs-location = bottom
 gtk-wide-tabs = false
+gtk-single-instance = true
+window-subtitle = working-directory
+# title = "ghostty"
+# shell-integration-features = "title"
 
 theme = catppuccin-mocha
 keybind = ctrl+t=new_tab
-keybind = ctrl+d=close_surface
+keybind = ctrl+shift+d=close_surface
 
 # jump to tab
 keybind = ctrl+one=goto_tab:1
@@ -17,8 +21,8 @@ keybind = ctrl+eight=goto_tab:8
 
 
 # splits
-keybind = ctrl+minus=new_split:down
-# keybind = ctrl+minus=unbind
+keybind = ctrl+equal=new_split:down
+keybind = ctrl+minus=unbind
 keybind = ctrl+backslash=new_split:right
 keybind = ctrl+up=goto_split:top
 keybind = ctrl+down=goto_split:bottom
