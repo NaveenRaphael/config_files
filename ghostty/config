@@ -5,7 +5,9 @@ window-subtitle = working-directory
 # title = "ghostty"
 # shell-integration-features = "title"
 
-theme = catppuccin-mocha
+keybind = ctrl+p=toggle_command_palette
+
+theme = Catppuccin Mocha
 keybind = ctrl+t=new_tab
 keybind = ctrl+shift+d=close_surface
 

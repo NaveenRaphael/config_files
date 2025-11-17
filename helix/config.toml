@@ -14,6 +14,7 @@ auto-completion = true
 word-completion.enable = true
 word-completion.trigger-length = 5
 rainbow-brackets = true
+auto-pairs = false
 
 [editor.lsp]
 enable = true
@@ -31,6 +32,7 @@ hidden= false
 cursor-line = "warning"
 
 [keys.normal]
+ret = "goto_word"
 "X" = "extend_line_above"
 
 "A-h" ="extend_char_left"
@@ -38,7 +40,7 @@ cursor-line = "warning"
 
 "B" = "extend_prev_long_word_start"
 "b" = "extend_prev_word_start"
-"C-b" = "extend_prev_word_start"
+"C-b" = "extend_prev_sub_word_start"
 
 "E" = "extend_next_long_word_end"
 "e" = "extend_next_word_end"
@@ -69,3 +71,4 @@ cursor-line = "warning"
 "C-backspace" = 'delete_word_backward'
 "C-right" = ["move_next_word_end", "collapse_selection"] 
 "C-left" = ["move_prev_word_start", "collapse_selection"] 
+"C-v" = ":clipboard-paste-after"
